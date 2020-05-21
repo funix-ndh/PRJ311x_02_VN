@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.HBox?>
+<HBox xmlns:fx="http://javax.com/fxml/1">
+  <padding>
+    <Insets top="10" bottom="10" left="10" />
+  </padding>
+  <ListView fx:id="clients" prefHeight="215" prefWidth="155" />
+</HBox>

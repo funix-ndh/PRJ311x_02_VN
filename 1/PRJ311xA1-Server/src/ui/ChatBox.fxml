@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane prefHeight="400" prefWidth="600" xmlns:fx="http://javax.com/fxml/1">
+  <padding>
+    <Insets top="10" left="10" bottom="10" right="10" />
+  </padding>
+  <TextArea fx:id="txtContent" prefHeight="345" prefWidth="600" />
+  <TextField fx:id="txtMessage" layoutY="360" prefHeight="30" prefWidth="510" />
+  <Button fx:id="btnSend" layoutX="530" layoutY="360" mnemonicParsing="false" text="Send" />
+</AnchorPane>
