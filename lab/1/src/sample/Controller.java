@@ -41,6 +41,13 @@ public class Controller {
         if (result.isPresent() && result.get() == ButtonType.OK) {
             ContactController contactController = fxmlLoader.getController();
             Contact newContact = contactController.getContact();
+            if (newContact.getFirstName().trim().isEmpty()) {
+                Alert alert = new Alert(AlertType.ERROR);
+                alert.setTitle("error");
+                alert.setContentText("first name is empty");
+                alert.showAndWait();
+                return;
+            }
             data.addContact(newContact);
             data.saveContacts();
         }
